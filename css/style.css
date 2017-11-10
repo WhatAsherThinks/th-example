@@ -20,13 +20,20 @@ body{
 }
 
 .top-nav{
-  background: yellow;
+  background: navy;
   height: 5rem;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+.top-nav ul{
+  display: flex;
+  list-style: none;
+  width: 100%;
+  padding-left: 3rem;
 }
 
 .landing{
@@ -40,4 +47,31 @@ body{
   color: pink;
   text-align: center;
   font-size: 6rem;
+  transition: 1s;
+}
+
+@media (max-width: 1000px) {
+.landing{
+  background-image: url("../images/oldsm.jpeg");
+  transition: 1s;
+  }
+}
+
+.row{
+  color: pink;
+  font-size: 3rem;
+  display: flex;
+}
+
+.col-3{
+  width: 33.33%;
+}
+
+@media (max-width: 700px) {
+  .row{
+    display: block;
+  }
+  .col-3{
+    width: 100%;
+  }
 }
