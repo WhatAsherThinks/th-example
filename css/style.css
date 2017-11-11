@@ -15,56 +15,84 @@ html{
 
 body{
   padding-top: 5rem;
-  color: white;
-
 }
+
+/*==============================
+          NAV BAR
+===============================*/
 
 .top-nav{
   background: navy;
-  height: 5rem;
+  height: 4rem;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   font-size: 2rem;
+  order: 0;
 }
 
 .top-nav ul{
   display: flex;
-  list-style: none;
-  width: 100%;
-  padding-left: 3rem;
+  justify-content: space-between;
 }
 
-.landing{
+.top-nav li{
+list-style-type: none;
+}
+
+.top-nav li a{
+  display: block;
+  color: white;
+  text-align:center;
+  text-decoration: none;
+}
+
+.top-nav li a:hover{
+  background-color: pink;
+}
+
+/*====================================
+      HOME PAGE
+====================================*/
+
+.title{
+  background: lightblue;
+  border: 1rem double white;
+  height: 8rem;
+  width: 100%;
+}
+
+.title h1{
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  color: pink;
+}
+
+.screen-image{
   background-image: url("../images/youngmed.jpeg");
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 50px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: pink;
-  text-align: center;
-  font-size: 6rem;
-  transition: 1s;
+  height: calc(100vh - 60px);
 }
 
-@media (max-width: 1000px) {
-.landing{
-  background-image: url("../images/oldsm.jpeg");
+.screen-image:hover{
+  background-image: url("../images/oldmd.jpeg");
+  background-position: center;
   transition: 1s;
   }
-}
+
 
 .row{
   color: pink;
-  font-size: 3rem;
+  font-size: 4rem;
   display: flex;
 }
 
 .col-3{
   width: 33.33%;
+  text-align: center;
 }
 
 @media (max-width: 700px) {
